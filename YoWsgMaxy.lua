@@ -390,7 +390,7 @@ function WindowTable:Window(Htitle,GMtitle,toclose)
 	Title.Position = UDim2.new(0.13, 0,0.009, 0)
 	Title.Size = UDim2.new(0, 210, 0, 43)
 	Title.Font = Enum.Font.Gotham
-	Title.Text = "| " .. Htitle .. " |"
+	Title.Text = " " .. Htitle .. " "
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextSize = 19.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
