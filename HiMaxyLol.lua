@@ -22,7 +22,7 @@ local HB = RunService.Heartbeat
 
 -- Random
 
-local AimlockEnabled = true
+local AimlockEnabled = false
 
 
 local mouse = player:GetMouse()
