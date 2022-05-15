@@ -3,8 +3,8 @@ local ESP = {
     TextColor = Color3.fromRGB(255,255,255),
     EquippedColor = Color3.fromRGB(255,255,255),
     DistanceColor = Color3.fromRGB(255,255,255),
-    LowerHealthColor = Color3.fromRGB(255,0,0),
-    HigherHealthColor = Color3.fromRGB(0,255,0),
+    LowerHealthColor = Color3.fromRGB(0,0,255),
+    HigherHealthColor = Color3.fromRGB(0,0,255),
     Color = Color3.fromRGB(255,255,255),
     HealthBar = false,
     Enabled = false,
@@ -17,7 +17,7 @@ local ESP = {
     FaceCamera = true,
     Names = false,
     TeamColor = true,
-    Thickness = 1,
+    Thickness = 1.2,
     AttachShift = 1,
     TeamMates = true,
     Players = true,
@@ -277,7 +277,7 @@ function boxBase:Update()
             self.Components.EquippedTool.Visible = true
             self.Components.EquippedTool.Position = Vector2.new(LegPos.X,LegPos.Y + BottomOffset)
             if Char:FindFirstChildOfClass("Tool") then 
-                self.Components.EquippedTool.Text = "Weapon: "..tostring(Char:FindFirstChildOfClass("Tool"))
+                self.Components.EquippedTool.Text = tostring(Char:FindFirstChildOfClass("Tool"))
                  BottomOffset = BottomOffset + 14
                 else
                     self.Components.EquippedTool.Text = ""
@@ -301,7 +301,7 @@ function boxBase:Update()
                     self.Components.Distance.Position = Vector2.new(TagPos.X, TagPos.Y - Offset)
                     Offset = Offset + 14
                 end
-                self.Components.Distance.Text = "Distance: "..math.floor((cam.CFrame.p - cf.p).magnitude) .."s"
+                self.Components.Distance.Text = math.floor((cam.CFrame.p - cf.p).magnitude) .."s"
                 self.Components.Distance.Color = ESP.DistanceColor
             else
                 self.Components.Distance.Visible = false
