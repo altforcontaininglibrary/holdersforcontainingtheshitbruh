@@ -24,7 +24,7 @@ local ESP = {
     Tracers = false,
     Objects = setmetatable({}, {__mode="kv"}),
     Overrides = {},
-    MaxShownDistance = 100,
+    MaxShownDistance = 150,
 
 }
 
