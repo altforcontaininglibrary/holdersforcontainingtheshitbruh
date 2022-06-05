@@ -3,8 +3,8 @@ local ESP = {
     TextColor = Color3.fromRGB(255,255,255),
     EquippedColor = Color3.fromRGB(255,255,255),
     DistanceColor = Color3.fromRGB(255,255,255),
-    LowerHealthColor = Color3.fromRGB(255,0,0),
-    HigherHealthColor = Color3.fromRGB(0,255,0),
+    LowerHealthColor = Color3.fromRGB(0,0,0),
+    HigherHealthColor = Color3.fromRGB(133, 87, 242),
     Color = Color3.fromRGB(255,255,255),
     HealthBar = false,
     Enabled = false,
@@ -17,14 +17,14 @@ local ESP = {
     FaceCamera = true,
     Names = false,
     TeamColor = true,
-    Thickness = 1.5,
+    Thickness = 0.5,
     AttachShift = 1,
     TeamMates = true,
     Players = true,
     Tracers = false,
     Objects = setmetatable({}, {__mode="kv"}),
     Overrides = {},
-    MaxShownDistance = 150,
+    MaxShownDistance = 200,
 
 }
 
