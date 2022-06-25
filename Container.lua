@@ -379,8 +379,8 @@ function ESP:Add(obj, options)
     box.Components["Quad"] = Draw("Quad", {
         Thickness = self.Thickness,
         Color = color,
-        Transparency = 0.1,
-        Filled = true,
+        Transparency = 1,
+        Filled = false,
         Visible = self.Enabled and self.Boxes
     })
     box.Components["Name"] = Draw("Text", {
@@ -425,7 +425,7 @@ function ESP:Add(obj, options)
     box.Components["Healthbar"] = Draw('Line',{
         Thickness = 1,
         Color = Color3.new(0,1,0),
-        Transparency = 0.1,
+        Transparency = 1,
         Visible = self.Enabled and self.HealthBar,
     })
     self.Objects[obj] = box
