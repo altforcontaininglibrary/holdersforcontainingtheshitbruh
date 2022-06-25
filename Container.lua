@@ -371,8 +371,8 @@ function ESP:Add(obj, options)
     box.Components["OutlineQuad"] = Draw("Quad", {
         Thickness = self.Thickness + 2,
         Color = Color3.fromRGB(0,0,0),
-        Transparency = 0.1,
-        Filled = true,
+        Transparency = 1,
+        Filled = false,
         Visible = self.Enabled and self.Boxes
     })
 
