@@ -18,7 +18,7 @@ local ESP = {
     FaceCamera = true,
     Names = false,
     TeamColor = true,
-    Thickness = 1,
+    Thickness = 0.5,
     AttachShift = 1,
     TeamMates = true,
     Players = true,
@@ -425,7 +425,7 @@ function ESP:Add(obj, options)
     box.Components["Healthbar"] = Draw('Line',{
         Thickness = 1,
         Color = Color3.new(0,1,0),
-        Transparency = 1,
+        Transparency = 0.1,
         Visible = self.Enabled and self.HealthBar,
     })
     self.Objects[obj] = box
